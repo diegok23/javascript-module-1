@@ -1,5 +1,2 @@
-let colors = "blue, yellow";
-
-const messageType = typeof colors;
-
-console.log(messageType);
+const colors = "blue, yellow";
+console.log(typeof colors);
