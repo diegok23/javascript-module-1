@@ -1,8 +1,8 @@
 const saludo = "Hola, mi nombre es";
 const nombre = "Diego";
 
-const opcionConcatenar = saludo + " " + nombre;
-const opcionInterpolar = `${saludo} ${nombre}`;
+const saludoConcatenar = saludo + " " + nombre;
+const saludoInterpolar = `${saludo} ${nombre}`;
 
-console.log("Ejercicio concatenando", opcionConcatenar);
-console.log("Ejercicio interpolando", opcionInterpolar);
+console.log("Ejercicio concatenando", saludoConcatenar);
+console.log("Ejercicio interpolando", saludoInterpolar);
