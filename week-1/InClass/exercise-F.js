@@ -3,5 +3,6 @@ const mentors = 8;
 const total = students + mentors;
 
 console.log("Number of students: " + students);
-console.log("Number of mentors: " + mentors);
-console.log("Total number of students and mentors: " + total);
+console.log("Number of mentors: ", mentors);
+console.log(`Total number of students and mentors: ${students + mentors}`);
+/* prueba de 3 formas de console.log */
