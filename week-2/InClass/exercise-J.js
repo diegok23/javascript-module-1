@@ -6,9 +6,9 @@ function secondMatchesAmy(array) {
 }
 
 let array = ["Alba", "Amy", "Anna"];
-
+console.log(array[1])
 console.log(secondMatchesAmy(array));
 
 array[1] = "Andy";
-
+console.log(array[1])
 console.log(secondMatchesAmy(array));
