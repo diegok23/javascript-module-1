@@ -6,15 +6,14 @@
 */
 
 function isNegative(num) {
-  if (num < 0) {
-    return true;
-  } else return false;
+  return num < 0
 }
 
 function isBetween5and10(num) {
   return 5 <= num && num <= 10;
 }
 
+// Numer 6 is based on name Daniel, it's only to get true as answer
 function isShortName(name) {
   return name.length <= 6;
 }
