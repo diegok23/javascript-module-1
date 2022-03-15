@@ -3,3 +3,19 @@
 
 var numbers = [0.1, 0.2, 0.3, 0.4, 0.5];
 
+function multiply (number){
+  return number * 100
+}
+console.log(numbers.map(multiply));
+
+// 
+
+let option2 = numbers.map(number => number * 100)
+console.log(option2)
+
+//
+
+let option3 = numbers.map(number => {
+  return number * 100
+});
+console.log(option3);
