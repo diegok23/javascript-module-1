@@ -7,7 +7,12 @@
   Tip: use the string method .split() and the array method .join()
 */
 
-function capitalise(str) {}
+function capitalise(str) {
+  const nameLowerCase = str.toLowerCase()
+  const initial = str.charAt(0).toUpperCase()
+  const nameLowerSliced = nameLowerCase.slice(1,str.length)
+  return initial+nameLowerSliced
+}
 
 /* 
   DO NOT EDIT BELOW THIS LINE
