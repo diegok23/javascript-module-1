@@ -1,6 +1,6 @@
 const array = ["Diego","Carlos","Cristiane","Valeria", "Alejandro","Jorgelina","Linda","Javier","Ratel","Joao","Victor","Angel","Laeken","Ananda","Vanessa"]
 console.log(`Estas son las personas en la sala de Zoom ${array.sort()}`);
-console.log(`En la sala de Zoom hat ${array.length} personas`);
+console.log(`En la sala de Zoom hay ${array.length} personas`);
 
 array.unshift("Matthew")
 array.push("Gloria")
