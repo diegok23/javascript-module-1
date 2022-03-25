@@ -3,6 +3,6 @@ function createGreeting(nameToGreeting) {
   return nameToGreeting;
 }
 
-var greeting = createGreeting("Diego");
+let greeting = createGreeting("Diego");
 
 console.log(`Hello, my name is: ${greeting}`);
