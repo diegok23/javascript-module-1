@@ -7,10 +7,10 @@
 */
 
 const userName = "Daniel";
-const danielsRole = "mentor";
+const userRole = "mentor";
 
-if (danielsRole === "mentor" || danielsRole === "student") {
-  console.log(`Hi, I'm ${userName}, I'm a ${danielsRole}`);
+if (userRole === "mentor" || userRole === "student") {
+  console.log(`Hi, I'm ${userName}, I'm a ${userRole}`);
 }
 
 /* 

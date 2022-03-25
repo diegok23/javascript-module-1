@@ -11,12 +11,12 @@ let n = 10;
 function sumTillNum(num) {
   //your code here
   let i = 0;
-  let suma = 0;
+  let addition = 0;
   while (i <= num) {
-    suma = suma + i;
+    addition = addition + i;
     i++;
   }
-  return suma;
+  return addition;
 }
 
 console.log("Sum from 0 to " + n + " is: " + sumTillNum(n));
