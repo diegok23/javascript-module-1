@@ -9,7 +9,8 @@
 */
 
 function colonisers() {
-
+  const startsWithA = voyagers.filter(item => item.includes ("family") && item.startsWith('A'));
+  return startsWithA
 }
 
 /* ======= TESTS - DO NOT MODIFY ===== */

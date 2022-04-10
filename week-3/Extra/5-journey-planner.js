@@ -6,8 +6,23 @@
 
   NOTE: only the names should be returned, not the means of transport.
 */
-
-function journeyPlanner() {
+/* 
+function journeyPlanner(londonLocations, transport) {
+  const transportFilter = londonLocations.filter((item) =>
+    item.includes(transport)
+  );
+  const firstItem = transportFilter.map((item) => item.slice(0, 1));
+  return firstItem.flat(1);
+}
+ */
+function journeyPlanner(londonLocations, transport) {
+  let transport2 = [];
+  londonLocations.map(function (item) {
+    if (item.includes(transport)) {
+      transport2.push(item[0]);
+    }
+  });
+  return transport2
 }
 
 /* ======= TESTS - DO NOT MODIFY ===== */
@@ -16,20 +31,22 @@ const londonLocations = [
   ["Angel", "tube", "bus"],
   ["Greenwich", "bus", "river boat", "dlr", "air line", "tube"],
   ["London Bridge", "tube", "river boat"],
-  ["Tower Bridge", "tube", "bus"],
-]
+  ["Tower Bridge", "tube", "bus"]
+];
 
-const util = require('util');
+const util = require("util");
 
 function test(test_name, actual, expected) {
-    let status;
-    if (util.isDeepStrictEqual(actual, expected)) {
-        status = "PASSED";
-    } else {
-        status = `FAILED: expected: ${util.inspect(expected)} but your function returned: ${util.inspect(actual)}`;
-    }
+  let status;
+  if (util.isDeepStrictEqual(actual, expected)) {
+    status = "PASSED";
+  } else {
+    status = `FAILED: expected: ${util.inspect(
+      expected
+    )} but your function returned: ${util.inspect(actual)}`;
+  }
 
-    console.log(`${test_name}: ${status}`);
+  console.log(`${test_name}: ${status}`);
 }
 
 test(

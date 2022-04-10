@@ -10,9 +10,12 @@
   Use the tests to confirm which message to return
 */
 
-function bushChecker() {
-
-}
+function bushChecker(array) {
+  const result = array.every((item) => item === "pink")
+  if (result) {
+  return "Bush is safe to eat from"
+} return "Toxic! Leave bush alone!"
+} 
 
 /* ======= TESTS - DO NOT MODIFY ===== */
 

@@ -7,8 +7,14 @@
   - Returns an array containing only the names of the who have attended AT LEAST 8 classes
 */
 
-function eligibleStudents() {
-
+function eligibleStudents(attendances) {
+  let students = [];
+  attendances.map(function (item) {
+    if (item[1] >= 8) {
+      students.push(item[0]);
+    }
+  });
+  return students;
 }
 
 /* ======= TESTS - DO NOT MODIFY ===== */
@@ -20,22 +26,26 @@ const attendances = [
   ["Adam", 7],
   ["Tayoa", 11],
   ["Nina", 10]
-]
+];
 
-const util = require('util');
+const util = require("util");
 
 function test(test_name, actual, expected) {
-    let status;
-    if (util.isDeepStrictEqual(actual, expected)) {
-        status = "PASSED";
-    } else {
-        status = `FAILED: expected: ${util.inspect(expected)} but your function returned: ${util.inspect(actual)}`;
-    }
+  let status;
+  if (util.isDeepStrictEqual(actual, expected)) {
+    status = "PASSED";
+  } else {
+    status = `FAILED: expected: ${util.inspect(
+      expected
+    )} but your function returned: ${util.inspect(actual)}`;
+  }
 
-    console.log(`${test_name}: ${status}`);
+  console.log(`${test_name}: ${status}`);
 }
 
-test("eligibleStudents function works",
-  eligibleStudents(attendances),
-  ["Ahmed", "Clement", "Tayoa", "Nina"]
-);
+test("eligibleStudents function works", eligibleStudents(attendances), [
+  "Ahmed",
+  "Clement",
+  "Tayoa",
+  "Nina"
+]);
